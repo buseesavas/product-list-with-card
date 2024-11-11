@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List With Card</title>
+    <script src="assets/js/basket.js" defer></script>
+    <link rel="stylesheet" href="assets/css/basket.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerInner">
+        <div class="productBox">
+          <h1>Desserts</h1>
+          <ul class="productList"></ul>
+        </div>
+        <div class="orderBox">
+          <h2>Your cart (<span class="totalCartText">0</span>)</h2>
+          <div class="emptyCart">
+            <img src="assets/images/empty-card-img.svg" alt="" />
+            <h5>Your added items will appear here</h5>
+          </div>
+          <ul class="orders"></ul>
+          <div class="fullBasket none">
+            <div class="carbonText">
+              <p>
+                <img
+                  src="assets/images/carbon-tree.svg"
+                  alt="Carbon tree"
+                />This is a <span>carbon-neutral</span> delivery
+              </p>
+            </div>
+            <button class="confirmBtn">Confirm Order</button>
+          </div>
+        </div>
+        <div class="overlay">
+          <div class="confirmMessage">
+            <div class="overlayText">
+              <img src="assets/images/carbon-checkmark.svg" alt="Carbon Checkmark">
+              <h3>Order Confirmed</h3>
+              <p>We hope you enjoy your food!</p>
+            </div>
+            <div class="scrollableContent">
+              <ul class="orderProducts"></ul>
+            </div>
+            <button class="newOrderBtn">
+              Start New Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
