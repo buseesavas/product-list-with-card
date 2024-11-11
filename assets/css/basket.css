@@ -456,6 +456,10 @@ margin-top: 32px;
 }
 
 @media (width >= 1110px) {
+  h2 {
+    margin-bottom: 24px;
+  }
+
   .containerInner {
     flex-direction: row;
     gap: 32px;
@@ -467,7 +471,8 @@ margin-top: 32px;
     max-width: 384px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    height: fit-content;
+    gap: 16px;
   }
 
   .confirmMessage {
